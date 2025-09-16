@@ -1,0 +1,31 @@
+{
+"policies": [
+{
+"name": "Customer API Gold Tier",
+"slug": "customer-api-gold",
+"active": true,
+"rate": 10000,
+"per": 60,
+"quota_max": 1000000,
+"quota_renewal_rate": 86400,
+"access_rights": {
+"customer-service-v1": {
+"api_name": "Customer Service API",
+"api_id": "customer-service-v1",
+"versions": ["v1.0"],
+"allowed_urls": [
+{
+"url": "/customers",
+"methods": ["GET","POST","PUT"]
+}
+]
+}
+},
+"tags": ["gold","premium"],
+"meta_data": {
+"tier": "gold",
+"support_level": "premium"
+}
+}
+]
+}
